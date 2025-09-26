@@ -14,36 +14,72 @@
 
         <!--Navigation-->
         <nav>
-        
-                <a href="index.html">Home</a>
-                <a href="./pages/products.html">Products</a>
-                <a href="./pages/blog.html">Blog</a>
-                <a href="./pages/about.html">About</a>
-                <a href="./pages/contact.html">Contact</a>
-
+            <a href="index.html">Home</a>
+            <a href="./pages/products.html">Products</a>
+            <a href="./pages/blog.html">Blog</a>
+            <a href="./pages/about.html">About</a>
+            <a href="./pages/contact.html">Contact</a>
         </nav>
+
+        <!-- Hamburger Menu -->
+        <div class="hamburger">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
     </header>
 
     <!--Hero Section-->
     <section class="hero">
         <h2>Gifted with Love - From Petals to Pastries</h2>
-        <p>Your one-stop shop for flowers, parcels and sweet delights for every occasion.</p>
+        <p>Your one-stop shop for flowers, parcels, and sweet delights for every occasion.</p>
         <a href="pages/products.html" class="btn">Shop Now</a>
     </section>
-
+            <!-- Intro paragraph -->
+     <p>Welcome to Petals, Parcels & Pastries! We specialize in creating thoughtful gifts for every occasion. From stunning floral arrangements to curated gift boxes and handmade sweet treats, every item is crafted with care and attention to detail.</p>
+     
     <!--Our Offerings-->
     <section>
         <h2>What We Offer</h2>
         <ul>
-            <li>Beautiful Flowers (Petals)</li>
-            <li>Thoughtful Gifts (Parcels)</li>
-            <li>Irresistible sweet treats (Pastries)</li>
+            <li><strong>Beautiful Flowers (Petals):</strong> Fresh, locally sourced flowers arranged elegantly for birthdays, anniversaries, or any special occasion.</li>
+            <li><strong>Thoughtful Gifts (Parcels):</strong> Carefully curated boxes filled with unique gifts, personalized just for your loved ones.</li>
+            <li><strong>Irresistible Sweet Treats (Pastries):</strong> Handmade pastries baked with love, perfect for celebrations or a sweet surprise.</li>
         </ul>
+    </section>
+
+    <!--Why Choose Us-->
+    <section>
+        <h2>Why Choose Us?</h2>
+        <p>We combine quality, creativity, and sustainability. Every product is handcrafted with love, using eco-friendly packaging and locally sourced ingredients. Your gift will not only delight the recipient but also support local artisans and florists.</p>
+    </section>
+
+    <!--Testimonials-->
+    <section>
+        <h2>What Our Customers Say</h2>
+        <blockquote>
+            <p>"The flowers were stunning, and the gift box made my friend’s birthday unforgettable!"</p>
+            <footer>- Jane D.</footer>
+        </blockquote>
+        <blockquote>
+            <p>"I loved the pastries! Fresh, sweet, and beautifully packaged."</p>
+            <footer>- Michael S.</footer>
+        </blockquote>
     </section>
 
     <!--Footer-->
     <footer>
         <p>&copy; 2025 Petals, Parcels & Pastries | All Rights Reserved</p>
     </footer>
+
+    <!--Hamburger Menu Script-->
+    <script>    
+        const hamburger = document.querySelector('.hamburger');
+        const navMenu = document.querySelector('header nav');
+
+        hamburger.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+        });
+    </script>
 </body>
 </html>

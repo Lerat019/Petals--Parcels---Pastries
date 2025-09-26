@@ -47,5 +47,15 @@
     <footer>
         <p>&copy; 2025 Petals, Parcels & Pastries | All Rights Reserved</p>
     </footer>
+
+    <!--Hamburger Menu Scrip-->
+    <script>    
+        const hamburger = document.querySelector('.hamburger');
+        const navMenu = document.querySelector('header nav');
+
+        hamburger.addEventListener('click', () => {
+        navMenu.classList.toggle('active');
+    });
+    </script>
 </body>
 </html>
