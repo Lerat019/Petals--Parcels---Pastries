@@ -8,7 +8,8 @@ All notable changes to this project are documented in this file
 ## [1.1.0] – Core Pages Added  
 - Added about.html, products.html, blog.html, and contact.html  
 - Inserted placeholder images under assets/  
-- Set up consistent navigation across all pages  
+- Set up consistent navigation across all pages
+- More information added to html pages
 
 ## [1.2.0] – Styling and Design  
 - Linked external stylesheet style.css for consistent styling 
