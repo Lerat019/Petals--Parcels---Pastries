@@ -1,5 +1,5 @@
 # Petals, Parcels & Pastries
-POE Part 2
+# POE Part 2
 
 ## Project Overview
 *Petals, Parcels & Pastries* is a boutique business offering a unique blend of floral arrangements (petals), curated gift boxes (parcels), and freshly baked sweet treats (pastries). The organization focuses on creating thoughtful and elegant gifting experiences by merging three joyful experiences into one.
@@ -21,9 +21,10 @@ The brand celebrates meaningful moments – whether surprising a loved one with 
 - *Products Page* – Display of floral arrangements, gift boxes, and pastries  
 - *Blog Page* – Updates, tips, and announcements  
 - *Contact Page* – Contact form with spam protection  
-- *Responsive Design* – Fully mobile-friendly  
+- *Responsive Design* – Fully mobile-friendly with tablet and small mobile optimizations  
 - *Navigation* – Header with links and hamburger menu for small screens  
-- *Visual Elements* – High-quality images and consistent branding colors  
+- *Visual Elements* – High-quality images and consistent branding colors, and interactive hover states
+- *Accessibility* - Focus outlines and navigation support  
 
 ## Installation / Usage
 1. Clone or download the repository.  
@@ -50,6 +51,12 @@ For all updates and version history, see the [Changelog](CHANGELOG.md)
 - Security features like HTTPS and spam protection are implemented.  
 - The website allows for easy content updates via simple content management for products and blog posts.  
 - Designed with user experience, accessibility, and mobile-first responsiveness in mind.
+- Interactive elements use pseudo-classes like hover, focus, active and nth-child() for improved UX.
+- Hamburger menu includes smooth open/close animations for mobile devices 
 
 ## References
 - Busch, Koch & Santiago (2014). Security Features in Web Development [https://link.springer.com/chapter/10.1007/978-3-319-07452-8_5]
+- W3Schools. (2024). CSS Pseudo-classes Tutorial [https://www.w3schools.com/css/css_pseudo_classes.asp]
+- MDN Web Docs. (2024). Responsive Design with Media Queries [https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Media_queries]
+- FreeCodeCamp. (2024). Building a Responsive Navigation Menu [https://www.freecodecamp.org/news/responsive-navigation-bar-html-css/] 
+- Canva. (2025). Pastel Color Inspiration for Web Design [https://www.canva.com/colors/color-palettes/pastel-dream/]

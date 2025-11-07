@@ -424,3 +424,110 @@ li {
         width: 90%;
     }
 }
+
+/* ===============================
+   Pseudo-Classes Enhancements
+================================= */
+
+/* Alternate background for every 2nd list item */
+ul li:nth-child(even) {
+    background-color: #fff5f8;
+    border-radius: 8px;
+    padding: 5px 10px;
+}
+
+/* Interactive link states */
+nav a:hover,
+nav a:focus {
+    color: #ffdbe3;
+    text-decoration: underline;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Active navigation link feedback */
+nav a:active {
+    color: #f7c6c7;
+    transform: scale(0.98);
+}
+
+/* Button interactivity */
+.btn:hover {
+    background-color: #e99ca7;
+    transform: scale(1.05);
+    transition: all 0.3s ease-in-out;
+}
+
+.btn:active {
+    transform: scale(0.97);
+    background-color: #d47f8c;
+}
+
+/* Accessibility: focus outlines for keyboard users */
+a:focus, button:focus, input:focus, textarea:focus {
+    outline: 2px solid #f7c6c7;
+    outline-offset: 3px;
+}
+
+/* ===============================
+   Navigation Animation
+================================= */
+.hamburger.active div:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+.hamburger.active div:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.active div:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+}
+
+nav {
+    transition: all 0.3s ease-in-out;
+}
+
+/* ===============================
+   Extra Media Queries for Responsiveness
+================================= */
+
+/* Tablet (1024px and below) */
+@media (max-width: 1024px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    nav {
+        gap: 15px;
+    }
+
+    .hero h2 {
+        font-size: 30px;
+    }
+
+    .hero p {
+        font-size: 17px;
+    }
+}
+
+/* Small mobile (400px and below) */
+@media (max-width: 400px) {
+    header .logo {
+        font-size: 18px;
+    }
+
+    .btn {
+        width: 100%;
+        font-size: 15px;
+    }
+
+    .hero h2 {
+        font-size: 22px;
+    }
+
+    .hero p {
+        font-size: 14px;
+    }
+}

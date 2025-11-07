@@ -10,15 +10,20 @@
   <!-- Navigation -->
   <header>
     <h1 class="logo">Petals, Parcels & Pastries</h1>
-    <nav class="navbar">
-      <div class="nav-links">
+    <nav>
         <a href="../index.html">Home</a>
         <a href="products.html">Products</a>
         <a href="blog.html" class="active">Blog</a>
         <a href="about.html">About</a>
         <a href="contact.html">Contact</a>
-      </div>
     </nav>
+
+  <!-- Hamburger Menu -->
+   <div class="hamburger" aria-label="Toggle Navigation" role="button" tabindex="0">
+    <div></div>
+    <div></div>
+    <div></div>
+   </div>  
   </header>
 
   <!-- Hero Section -->
@@ -58,7 +63,7 @@
     <p>&copy; 2025 Petals, Parcels & Pastries. All rights reserved.</p>
   </footer>
 
-  <!--Hamburger Menu Scrip-->
+  <!--Hamburger Menu Script-->
     <script>    
         const hamburger = document.querySelector('.hamburger');
         const navMenu = document.querySelector('header nav');
@@ -66,6 +71,13 @@
         hamburger.addEventListener('click', () => {
         navMenu.classList.toggle('active');
     });
+
+    document.querySelectorAll('nav a').forEach(link => {
+            link.addEventListener('click', () => {
+                hamburger.classList.remove('active');
+                navMenu.classList.remove('active');
+            });
+        });
     </script>
 </body>
 </html>
