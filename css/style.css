@@ -41,13 +41,16 @@ header .logo {
 header nav {
     display: flex;
     gap: 20px;
+    transition: all 0.3s ease;
 }
 
 header nav a {
     text-decoration: none;
     color: white;
     font-weight: bold;
-    transition: 0.3s;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: 0.3s ease;
 }
 
 header nav a:hover,
@@ -63,6 +66,7 @@ header nav a.active {
     flex-direction: column;
     cursor: pointer;
     gap: 5px;
+    z-index: 1000;
 }
 
 .hamburger div {
@@ -375,19 +379,44 @@ li {
 ================================= */
 @media (max-width: 768px) {
     header {
-        flex-direction: column;
-        text-align: center;
+        padding: 15px 20px;
     }
 
-    nav {
+    /*Hide navigation by default on mobile */
+    header nav {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #f7c6c7;
         flex-direction: column;
-        display: none;
+        gap: 0;
+        padding: 0;
+        max-height: 0;
+        overflow: hidden;
+        opacity: 0;
+        transition: all 0.3s ease;
     }
 
-    nav.active {
+    /* Show navigation when active*/
+    header nav.active {
+        max-height: 300px;
+        opacity: 1;
+        padding: 10px 0;
         display: flex;
     }
 
+    header nav a {
+        padding: 15px 20px;
+        border-bottom: 1px solid rgba (255);
+        border-radius: 0;
+    }
+
+    header nav a:last-child {
+        border-bottom: none;
+    }
+
+    /*Show hamburger on mobile */
     .hamburger {
         display: flex;
     }
@@ -397,6 +426,10 @@ li {
     .blog-grid {
         grid-template-columns: 1fr;
         gap: 20px;
+    }
+
+    .hero{
+        padding: 60px 20px;
     }
 }
 
@@ -494,12 +527,10 @@ nav {
 /* Tablet (1024px and below) */
 @media (max-width: 1024px) {
     header {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
+        padding: 20px 30px;
     }
 
-    nav {
+    header nav {
         gap: 15px;
     }
 
@@ -509,6 +540,12 @@ nav {
 
     .hero p {
         font-size: 17px;
+    }
+
+    .product-grid
+    .blog-grid{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
     }
 }
 
