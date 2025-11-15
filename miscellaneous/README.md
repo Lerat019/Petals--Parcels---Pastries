@@ -54,6 +54,9 @@ For all updates and version history, see the [Changelog](CHANGELOG.md)
 - Interactive elements use pseudo-classes like hover, focus, active and nth-child() for improved UX.
 - Hamburger menu includes smooth open/close animations for mobile devices 
 
+## Our Storyline
+Petals, Parcels & Pastries is a boutique business offering handcrafted floral arrangements, curated gift parcels, and freshly baked pastries for personal and special occasions. Customers can enquire about pricing, custom orders, and delivery availability through the site.
+
 ## References
 - Busch, Koch & Santiago (2014). Security Features in Web Development [https://link.springer.com/chapter/10.1007/978-3-319-07452-8_5]
 - W3Schools. (2024). CSS Pseudo-classes Tutorial [https://www.w3schools.com/css/css_pseudo_classes.asp]

@@ -15,37 +15,67 @@
             <a href="products.html">Products</a>
             <a href="blog.html">Blog</a>
             <a href="about.html">About</a>
-            <a href="contact.html">Contact</a>
+            <a href="enquiry.html">Enquiry</a>
+            <a href="contact.html" class="active">Contact</a>
         </nav>
 
-   <!-- Hamburger Menu-->   
-      <div class="hamburger" aria-label="Toggle Navigation" role="button" tabindex="0">
-        <div></div>
-        <div></div>
-        <div></div>
-      </div>
+        <!-- Hamburger Menu-->   
+        <div class="hamburger" aria-label="Toggle Navigation" role="button" tabindex="0">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
     </header>
 
     <!--Contact Section-->
     <section class="contact">
         <h2>Get in Touch</h2>
         <p>We’d love to hear from you! Fill out the form below and we’ll get back to you as soon as possible.</p>
-        <form>
+
+        <!-- Contact Form -->
+        <form id="contactForm" novalidate>
+            <!-- Full Name -->
             <div class="form-group">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" placeholder="Your Name" required>
+                <label for="name">Full Name: <span class="required">*</span></label>
+                <input type="text" id="name" name="name" placeholder="Your Full Name" required>
+                <span class="error-message" id="nameError"></span>
             </div>
 
+            <!-- Email Address -->
             <div class="form-group">
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" placeholder="Your Email" required>
+                <label for="email">Email Address: <span class="required">*</span></label>
+                <input type="email" id="email" name="email" placeholder="your.email@example.com" required>
+                <span class="error-message" id="emailError"></span>
             </div>
 
+            <!-- Phone Number -->
             <div class="form-group">
-                <label for="message">Message:</label>
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" placeholder="0XX XXX XXXX">
+                <span class="error-message" id="phoneError"></span>
+            </div>
+
+            <!-- Message Type -->
+            <div class="form-group">
+                <label for="messageType">Message Type: <span class="required">*</span></label>
+                <select id="messageType" name="messageType" required>
+                    <option value="">-- Select a type --</option>
+                    <option value="General">General</option>
+                    <option value="Feedback">Feedback</option>
+                    <option value="Complaint">Complaint</option>
+                    <option value="Other">Other</option>
+                </select>
+                <span class="error-message" id="messageTypeError"></span>
+            </div>
+
+            <!-- Message Field -->
+            <div class="form-group">
+                <label for="message">Message: <span class="required">*</span></label>
                 <textarea id="message" name="message" rows="6" placeholder="Write your message here..." required></textarea>
+                <span class="error-message" id="messageError"></span>
             </div>
 
+            <!-- Submit Button -->
             <button type="submit" class="btn">Send Message</button>
         </form>
     </section>
@@ -61,15 +91,18 @@
         const navMenu = document.querySelector('header nav');
 
         hamburger.addEventListener('click', () => {
-        navMenu.classList.toggle('active');
-    });
+            navMenu.classList.toggle('active');
+        });
 
-    document.querySelectorAll('nav a').forEach(link => {
+        document.querySelectorAll('nav a').forEach(link => {
             link.addEventListener('click', () => {
                 hamburger.classList.remove('active');
                 navMenu.classList.remove('active');
             });
         });
     </script>
+
+    <!-- Contact JS -->
+    <script src="../js/contact.js"></script>
 </body>
 </html>

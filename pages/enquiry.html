@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enquiry - Petals, Parcels & Pastries</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <header>
+        <h1 class="logo">Petals, Parcels & Pastries</h1>
+        <nav>
+            <a href="../index.html">Home</a>
+            <a href="products.html">Products</a>
+            <a href="blog.html">Blog</a>
+            <a href="about.html">About</a>
+            <a href="enquiry.html" class="active">Enquiry</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+
+        <!-- Hamburger Menu -->
+        <div class="hamburger" aria-label="Toggle Navigation" role="button" tabindex="0">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </header>
+
+    <!-- Enquiry Section -->
+    <section class="contact enquiry">
+        <h2>Make An Enquiry</h2>
+        <p>Interested in our products or services? Fill out the form below and we’ll get back to you with pricing and availability!</p>
+
+        <!-- Success Message -->
+        <div id="successMessage" class="alert alert-success" style="display: none;">
+            <h3>Thank you for your enquiry!</h3>
+            <p id="responseMessage"></p>
+        </div>
+
+        <!-- Error Message -->
+        <div id="errorMessage" class="alert alert-error" style="display: none;">
+            <p>Please correct your errors below and try again.</p>
+        </div>
+
+        <!-- Enquiry Form -->
+        <form id="enquiryForm" novalidate>
+
+            <!-- Full Name -->
+            <div class="form-group">
+                <label for="name">Full Name: <span class="required">*</span></label>
+                <input type="text" id="name" name="name" placeholder="Your Full Name" required>
+                <span class="error-message" id="nameError"></span>
+            </div>
+
+            <!-- Email Address -->
+            <div class="form-group">
+                <label for="email">Email Address: <span class="required">*</span></label>
+                <input type="email" id="email" name="email" placeholder="your.email@example.com" required>
+                <span class="error-message" id="emailError"></span>
+            </div>
+
+            <!-- Phone Number -->
+            <div class="form-group">
+                <label for="phone">Phone Number: <span class="required">*</span></label>
+                <input type="tel" id="phone" name="phone" placeholder="0XX XXX XXXX" required>
+                <span class="error-message" id="phoneError"></span>
+            </div>
+
+            <!-- Enquiry Type -->
+            <div class="form-group">
+                <label for="enquiryType">Enquiry Type: <span class="required">*</span></label>
+                <select id="enquiryType" name="enquiryType" required>
+                    <option value="">-- Select an option --</option>
+                    <option value="Product Pricing">Product Pricing</option>
+                    <option value="Custom Orders">Custom Orders</option>
+                    <option value="Delivery Info">Delivery Info</option>
+                    <option value="General Question">General Question</option>
+                </select>
+                <span class="error-message" id="enquiryTypeError"></span>
+            </div>
+
+            <!-- Message Field -->
+            <div class="form-group">
+                <label for="message">Your Message: <span class="required">*</span></label>
+                <textarea id="message" name="message" rows="5" placeholder="Type your enquiry here..." required></textarea>
+                <span class="error-message" id="messageError"></span>
+            </div>
+
+            <!-- Submit Button -->
+            <button type="submit" class="btn">Submit Enquiry</button>
+
+        </form>
+    </section>
+<script src="../js/enquiry.js"></script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "category": "Petals",
+    "name": "Rose Bouquet",
+    "price": 350,
+    "description": "A hand-tied bouquet of fresh red and roses wrapped in eco-friendly paper.",
+    "image":"../assets/petals3"
+  },
+  {
+    "id": 2,
+    "category": "Petals",
+    "name": "Daisy Dream",
+    "price": 280,
+    "description": "Bright and cheerful sunflowers to bring warmth and happiness to any occasion.",
+    "image": "..assets/pe"
+  },
+  {
+    "id": 3,
+    "category": "Parcels",
+    "name": "Gift Hamper Deluxe",
+    "price": 420,
+    "description": "A luxury hamper filled with gourmet snacks, chocolates, and a personalized note.",
+    "image": "../assets/parcels1.jpg"
+  },
+  {
+    "id": 4,
+    "category": "Parcels",
+    "name": "Wellness Box",
+    "price": 380,
+    "description": "A soothing self-care parcel featuring organic tea, candles, and a calming lotion.",
+    "image": "../assets/parcels2.jpg"
+  },
+  {
+    "id": 5,
+    "category": "Pastries",
+    "name": "Macaron Assortment",
+    "price": 240,
+    "description": "A delicious box of eight assorted macarons, freshly baked with fresh, creamy, and fruity fiilings.",
+    "image"
+  },
+  {
+    "id": 6,
+    "category": "Pastries",
+    "name": "Mini Pastry Platter",
+    "price": 300,
+    "description": "A selection of bite-sized pastries and tarts perfect for any celebration.",
+    "image": "../assets/pastries2.jpg"
+  }
+]

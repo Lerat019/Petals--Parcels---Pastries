@@ -309,9 +309,10 @@ li {
 
 .product-card img {
     width: 100%;
+    height: 250px;
+    object-fit: cover;
     border-radius: 12px;
     margin-bottom: 15px;
-    max-width: 100%;
 }
 
 .product-card h4 {
@@ -567,4 +568,197 @@ nav {
     .hero p {
         font-size: 14px;
     }
+}
+
+/* ============================
+   FORM STYLES (ENQUIRY & CONTACT)
+   ============================ */
+
+form {
+  max-width: 550px;
+  margin: 20px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 12px rgba(0,0,0,0.08);
+}
+
+.form-group {
+  margin-bottom: 18px;
+}
+
+label {
+  font-weight: 600;
+  display: block;
+  margin-bottom: 6px;
+}
+
+input, select, textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #cfcfcf;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-family: inherit;
+}
+
+input:focus, select:focus, textarea:focus {
+  border-color: #ff6699;
+  outline: none;
+  box-shadow: 0 0 6px rgba(255, 102, 153, 0.4);
+}
+
+textarea {
+  min-height: 110px;
+  resize: vertical;
+}
+
+.required {
+  color: red;
+  font-weight: bold;
+}
+
+/* Error Messages */
+.error-message {
+  color: #d00000;
+  font-size: 0.85rem;
+  margin-top: 4px;
+  display: block;
+}
+
+/* ALERT BOXES */
+.alert {
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  text-align: left;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.alert-success {
+  background: #e8ffe9;
+  border-left: 6px solid #28a745;
+}
+
+.alert-error {
+  background: #ffe9e9;
+  border-left: 6px solid #d00000;
+}
+
+/* Submit Button */
+button {
+  background: #ff6699;
+  color: #fff;
+  padding: 12px 20px;
+  width: 100%;
+  font-size: 1rem;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+button:hover {
+  background: #ff4d88;
+}
+
+/* ===============================
+   Lightbox Gallery Styles
+================================= */
+.lightbox {
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.lightbox:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.lightbox-modal {
+    display: none;
+    position: fixed;
+    z-index: 10000;
+    padding-top: 60px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.8);
+}
+
+.lightbox-content {
+    margin: auto;
+    display: block;
+    max-width: 90%;
+    max-height: 80%;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.3);
+}
+
+.lightbox-modal .close {
+    position: absolute;
+    top: 20px;
+    right: 35px;
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.lightbox-modal .close:hover {
+    color: #ff6699;
+}
+
+#caption {
+    text-align: center;
+    color: #fff;
+    padding: 10px 0;
+    font-size: 1rem;
+}
+
+/* ===============================
+   Accordion Styles
+================================= */
+.accordion {
+    margin-top: 15px;
+    text-align: left;
+}
+
+.accordion-header {
+    background-color: #f7c6c7;
+    color: #fff;
+    cursor: pointer;
+    padding: 12px 20px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.accordion-header:hover,
+.accordion-header.active {
+    background-color: #e99ca7;
+}
+
+.accordion-content {
+    background-color: #ffeef4;
+    padding: 0 20px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease, padding 0.3s ease;
+    border-radius: 0 0 8px 8px;
+    margin-bottom: 10px;
+}
+
+.accordion-content p {
+    padding: 10px 0;
+    margin: 0;
 }
