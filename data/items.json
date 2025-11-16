@@ -1,50 +1,74 @@
 [
   {
     "id": 1,
+    "name": "Daisies",
     "category": "Petals",
-    "name": "Rose Bouquet",
-    "price": 350,
-    "description": "A hand-tied bouquet of fresh red and roses wrapped in eco-friendly paper.",
-    "image":"../assets/petals3"
+    "price": 150,
+    "image": "assets/daisies.jpg",
+    "description": "Fresh and bright daisies perfect for any occasion."
   },
   {
     "id": 2,
+    "name": "Purple Roses",
     "category": "Petals",
-    "name": "Daisy Dream",
-    "price": 280,
-    "description": "Bright and cheerful sunflowers to bring warmth and happiness to any occasion.",
-    "image": "..assets/pe"
+    "price": 200,
+    "image": "assets/purple_roses.jpg",
+    "description": "Elegant purple roses to brighten someone's day."
   },
   {
     "id": 3,
-    "category": "Parcels",
-    "name": "Gift Hamper Deluxe",
-    "price": 420,
-    "description": "A luxury hamper filled with gourmet snacks, chocolates, and a personalized note.",
-    "image": "../assets/parcels1.jpg"
+    "name": "Red Roses",
+    "category": "Petals",
+    "price": 250,
+    "image": "assets/red_roses.jpg",
+    "description": "Classic red roses to express love and admiration."
   },
   {
     "id": 4,
+    "name": "Gift Box with Cup & Scrunchies",
     "category": "Parcels",
-    "name": "Wellness Box",
-    "price": 380,
-    "description": "A soothing self-care parcel featuring organic tea, candles, and a calming lotion.",
-    "image": "../assets/parcels2.jpg"
+    "price": 300,
+    "image": "assets/giftbox_cup_scrunchies.jpg",
+    "description": "A thoughtful gift box including a cup and scrunchies."
   },
   {
     "id": 5,
-    "category": "Pastries",
-    "name": "Macaron Assortment",
-    "price": 240,
-    "description": "A delicious box of eight assorted macarons, freshly baked with fresh, creamy, and fruity fiilings.",
-    "image"
+    "name": "Box with Pajamas & Slippers",
+    "category": "Parcels",
+    "price": 400,
+    "image": "assets/pajamas_slippers.jpg",
+    "description": "Comfortable pajamas and slippers, beautifully packed."
   },
   {
     "id": 6,
+    "name": "Necklace Box",
+    "category": "Parcels",
+    "price": 350,
+    "image": "assets/necklace_box.jpg",
+    "description": "A lovely necklace presented in a gift box."
+  },
+  {
+    "id": 7,
+    "name": "Brownies",
     "category": "Pastries",
-    "name": "Mini Pastry Platter",
-    "price": 300,
-    "description": "A selection of bite-sized pastries and tarts perfect for any celebration.",
-    "image": "../assets/pastries2.jpg"
+    "price": 80,
+    "image": "assets/brownies.jpg",
+    "description": "Rich and fudgy brownies for chocolate lovers."
+  },
+  {
+    "id": 8,
+    "name": "Macaroons",
+    "category": "Pastries",
+    "price": 120,
+    "image": "assets/macaroons.jpg",
+    "description": "Colorful macaroons with delicious fillings."
+  },
+  {
+    "id": 9,
+    "name": "Cheesecake",
+    "category": "Pastries",
+    "price": 180,
+    "image": "assets/cheesecake.jpg",
+    "description": "Creamy cheesecake, perfect for dessert lovers."
   }
 ]

@@ -326,6 +326,18 @@ li {
     margin-bottom: 15px;
 }
 
+.product-card h3 {
+    color: #333;
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+}
+
+.products h2 {
+    font-size: 1.8rem;
+    margin-bottom: 50px;
+    color: #333;
+}
+
 /* ===============================
    Blog Page (blog.html)
 ================================= */
