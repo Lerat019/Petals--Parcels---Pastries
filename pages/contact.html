@@ -6,6 +6,7 @@
     <title>Contact | Petals, Parcels & Pastries</title>
     <meta name="description" content="Get in touch with Petals, Parcels & Pastries for orders, enquiries, or custom gift requests">
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"> 
 </head>
 <body>
     <!--Navigation-->
@@ -81,6 +82,11 @@
         </form>
     </section>
 
+    <section class="map-section">
+    <h2>Find Us Here</h2>
+    <div id="map" style="height: 400px; width: 100%; border-radius: 10px;"></div>
+    </section>
+
     <!--Footer-->
     <footer>
         <p>&copy; 2025 Petals, Parcels & Pastries | All Rights Reserved</p>
@@ -105,5 +111,6 @@
 
     <!-- Contact JS -->
     <script src="../js/contact.js"></script>
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
 </body>
 </html>

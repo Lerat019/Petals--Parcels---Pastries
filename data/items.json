@@ -5,7 +5,8 @@
     "category": "Petals",
     "price": 150,
     "image": "assets/daisies.jpg",
-    "description": "Fresh and bright daisies perfect for any occasion."
+    "description": "Fresh and bright daisies perfect for any occasion.",
+    "tags": ["flower", "fresh", "bright", "gift", "decoration"]
   },
   {
     "id": 2,
@@ -13,7 +14,8 @@
     "category": "Petals",
     "price": 200,
     "image": "assets/purple_roses.jpg",
-    "description": "Elegant purple roses to brighten someone's day."
+    "description": "Elegant purple roses to brighten someone's day.",
+    "tags": ["flower", "purple", "gift", "romantic", "decoration"]
   },
   {
     "id": 3,
@@ -21,7 +23,8 @@
     "category": "Petals",
     "price": 250,
     "image": "assets/red_roses.jpg",
-    "description": "Classic red roses to express love and admiration."
+    "description": "Classic red roses to express love and admiration.",
+    "tags": ["flower", "red", "love", "romantic", "gift"]
   },
   {
     "id": 4,
@@ -29,7 +32,8 @@
     "category": "Parcels",
     "price": 300,
     "image": "assets/giftbox_cup_scrunchies.jpg",
-    "description": "A thoughtful gift box including a cup and scrunchies."
+    "description": "A thoughtful gift box including a cup and scrunchies.",
+    "tags": ["gift", "box", "cup", "scrunchies", "birthday", "anniversary"]
   },
   {
     "id": 5,
@@ -37,7 +41,8 @@
     "category": "Parcels",
     "price": 400,
     "image": "assets/pajamas_slippers.jpg",
-    "description": "Comfortable pajamas and slippers, beautifully packed."
+    "description": "Comfortable pajamas and slippers, beautifully packed.",
+    "tags": ["gift", "box", "pajamas", "slippers", "cozy", "relaxation"]
   },
   {
     "id": 6,
@@ -45,7 +50,8 @@
     "category": "Parcels",
     "price": 350,
     "image": "assets/necklace_box.jpg",
-    "description": "A lovely necklace presented in a gift box."
+    "description": "A lovely necklace presented in a gift box.",
+    "tags": ["gift", "box", "necklace", "jewelry", "special occasion"]
   },
   {
     "id": 7,
@@ -53,7 +59,8 @@
     "category": "Pastries",
     "price": 80,
     "image": "assets/brownies.jpg",
-    "description": "Rich and fudgy brownies for chocolate lovers."
+    "description": "Rich and fudgy brownies for chocolate lovers.",
+    "tags": ["chocolate", "dessert", "cake", "fudge", "sweet"]
   },
   {
     "id": 8,
@@ -61,7 +68,8 @@
     "category": "Pastries",
     "price": 120,
     "image": "assets/macaroons.jpg",
-    "description": "Colorful macaroons with delicious fillings."
+    "description": "Colorful macaroons with delicious fillings.",
+    "tags": ["sweet", "colorful", "dessert", "pastry", "gift"]
   },
   {
     "id": 9,
@@ -69,6 +77,7 @@
     "category": "Pastries",
     "price": 180,
     "image": "assets/cheesecake.jpg",
-    "description": "Creamy cheesecake, perfect for dessert lovers."
+    "description": "Creamy cheesecake, perfect for dessert lovers.",
+    "tags": ["dessert", "sweet", "cake", "cheese", "pastry"]
   }
 ]

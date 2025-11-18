@@ -61,9 +61,9 @@ document.addEventListener("DOMContentLoaded", () => {
             isValid = false;
         }
 
-        // Phone (optional)
+        // Phone
         if (!validPhone(fields.phone.value)) {
-            errors.phone.textContent = "Enter a valid SA phone number (e.g. 0723456789) or leave blank.";
+            errors.phone.textContent = "Enter a valid SA phone number (e.g. 0723456789).";
             isValid = false;
         }
 
@@ -92,4 +92,21 @@ document.addEventListener("DOMContentLoaded", () => {
         // Clear form
         form.reset();
     });
+
+    // Leaflet Map Initialization
+    const storeCoordinates = [-26.03238419392736, 28.062570826983848];
+
+    // Initialize the map
+    const map = L.map('map').setView(storeCoordinates, 15);
+
+    // Add OpenStreetMap tiles
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        maxZoom: 19,
+        attribution: '&copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors'
+    }).addTo(map);
+
+    // Add a marker
+    L.marker(storeCoordinates).addTo(map)
+        .bindPopup('<b>Petals, Parcels & Pastries</b><br>Visit us here!')
+        .openPopup();
 });
