@@ -1,27 +1,30 @@
 # Changelog  
 All notable changes to this project are documented in this file 
 
-## [1.0.0] – Initial Setup  
-- Initial setup with project folders (assets, css, pages)
-- Added index.html (Home page) with basic navigation and hero section  
+## [1.0.0] – Initial Setup
 
-## [1.1.0] – Core Pages Added  
-- Added about.html, products.html, blog.html, and contact.html  
-- Inserted placeholder images under assets/  
-- Set up consistent navigation across all pages
-- More information added to html pages
+Initial project folder structure created: assets/, css/, pages/
+Added index.html with hero section and navigation
 
-## [1.2.0] – Styling and Design  
-- Linked external stylesheet style.css for consistent styling 
-- Applied brand color scheme (soft pink + coral)  
-- Added responsive layouts using CSS  
-- Updated typography and button styles  
+Files: index.html, folder structure
 
-## [1.3.0] – Recent Updates  
-- Completed responsive design for mobile and tablet (hamburger menu)  
-- Improved product and blog layouts with cards  
-- Finalized README with overview, technologies, and references  
-- Polished all pages for submission
+## [1.1.0] – Core Pages Added
+
+Added about.html, products.html, blog.html, contact.html
+Inserted placeholder images into assets/ folder
+Standardized navigation across all pages
+
+Files: pages/about.html, pages/products.html, pages/blog.html, pages/contact.html, assets/
+
+
+## [1.2.0] – Styling and Responsive Design
+
+Linked external style.css for consistent styling
+Applied pastel color scheme (soft pink + coral)
+Responsive layout implemented for desktop, tablet, and mobile
+Updated typography and buttons for modern aesthetic
+
+Files: css/style.css, all HTML pages
 
 ## Part  2 Feedback Changes
 
@@ -95,3 +98,111 @@ All notable changes to this project are documented in this file
 - Stack Overflow for hamburger menu implementation
 
 *Files Changed*: README.md
+
+
+## [1.3.0] – Interactive & Dynamic Features Added
+
+## Products Page (products.html)
+
+Feature 1: Search Bar & Product Filtering
+Added <input id="search"> above product grid
+Filters product cards by name, category, and tags dynamically
+Files: pages/products.html, js/products.js, css/style.css
+
+
+Feature 2: Accordion for Product Details
+Expand/collapse product details using .accordion-header
+Smooth transitions with max-height and padding changes
+Files: pages/products.html, js/products.js, css/style.css
+
+
+Feature 3: Lightbox Image Gallery
+Clicking product image opens modal with larger view and caption
+Close modal via “×” or clicking outside image
+Files: pages/products.html, js/products.js, css/style.css
+
+
+Feature 4: Dynamic Product Data
+Products loaded from items.json for easy content updates
+Files: pages/products.html, js/products.js, data/items.json
+
+
+## Enquiry Page (enquiry.html)
+
+Feature 1: Form Handling & Validation
+Validates user inputs (name, email, message type, message)
+Dynamic feedback for success/failure messages
+Files: pages/enquiry.html, js/enquiry.js, css/style.css
+
+
+## Contact Page (contact.html)
+
+Feature 1: Leaflet Interactive Map
+Map container <div id="map"> under “Find Us Here” section
+Custom coordinates for business location
+Pan, zoom, and map interaction enabled
+Files: pages/contact.html, js/contact.js, css/style.css
+
+
+Feature 2: Form Validation & Success Feedback
+Real-time validation for name, email, phone (optional), message type, message
+Error messages displayed next to each field (#nameError, #emailError, etc.)
+Success message shows after valid submission dynamically
+Files: pages/contact.html, js/contact.js, css/style.css
+
+
+Feature 3: Responsive Hamburger Menu
+.hamburger button added for mobile navigation
+Menu slides down/up on toggle, closes on link click or outside click
+Smooth transition animations included
+Files: pages/contact.html, pages/about.html, pages/products.html, pages/blog.html, pages/index.html, css/style.css
+
+## Styling Enhancements
+
+Hover, focus, and active pseudo-classes for buttons, nav links, product cards
+Transitions added to accordion, lightbox, hamburger menu
+Media queries for tablet (1024px) and mobile (768px) breakpoints
+Files: css/style.css
+
+
+## POE Part 3 – Functionality Documentation (Updated)
+Interactive Elements
+
+## Products Page
+
+Accordion: Expands and collapses product details dynamically
+Lightbox: Enlarged view of product images with captions
+Search Bar: Filters product cards by name, category, and tags
+Dynamic Product Data: Products dynamically loaded from items.json
+
+
+## Contact Page
+
+Leaflet Map: Interactive map with business coordinates, pan and zoom enabled
+Form Validation: Real-time validation for all form fields, dynamic success message
+
+
+## Enquiry Page
+
+Form Handling: Validates inputs and displays dynamic success/failure feedback
+Global Interactive Feature
+Hamburger Menu: Responsive navigation toggle for small screens with smooth open/close animation
+
+## Dynamic Content
+
+## Products Page
+Dynamic Product Filtering: JavaScript filters product cards in real-time based on user input
+Files: pages/products.html, js/products.js
+
+## Contact Page
+Dynamic Success Message: Displays user-specific message after successful form submission
+Files: pages/contact.html, js/contact.js
+
+## Enquiry Page
+Dynamic Form Feedback: Shows success/failure messages after form submission
+Files: pages/enquiry.html, js/enquiry.js
+
+## Notes
+All interactive elements tested across desktop, tablet, and mobile views
+Interactive features use CSS transitions for smooth UX
+Documentation explicitly references elements and pages where features were implemented

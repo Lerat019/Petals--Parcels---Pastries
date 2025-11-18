@@ -1,6 +1,28 @@
-// products.js
 document.addEventListener("DOMContentLoaded", () => {
+
     const productContainer = document.querySelector('.product-grid');
+
+    // ---------- Accordion initialization function ----------
+    function initAccordions() {
+        const accHeaders = document.querySelectorAll('.accordion-header');
+        accHeaders.forEach(header => {
+            // Remove old event listeners by cloning
+            header.replaceWith(header.cloneNode(true));
+        });
+        document.querySelectorAll('.accordion-header').forEach(header => {
+            header.addEventListener('click', () => {
+                header.classList.toggle('active');
+                const content = header.nextElementSibling;
+                if (content.style.maxHeight) {
+                    content.style.maxHeight = null;
+                    content.style.padding = "0 20px";
+                } else {
+                    content.style.maxHeight = content.scrollHeight + "px";
+                    content.style.padding = "10px 20px";
+                }
+            });
+        });
+    }
 
     // Create search bar above the product grid
     const searchContainer = document.createElement('div');
@@ -12,6 +34,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Get all product cards (hardcoded) and store for search/filter
     const allCards = Array.from(document.querySelectorAll('.product-card'));
+
+    // Initialize accordions on page load
+    initAccordions();
 
     const searchInput = document.getElementById('search');
     searchInput.addEventListener('input', (e) => {
@@ -27,22 +52,9 @@ document.addEventListener("DOMContentLoaded", () => {
                 card.style.display = 'none';
             }
         });
-    });
 
-    // Re-initialize accordion functionality for all cards
-    const accHeaders = document.querySelectorAll('.accordion-header');
-    accHeaders.forEach(header => {
-        header.addEventListener('click', () => {
-            header.classList.toggle('active');
-            const content = header.nextElementSibling;
-            if (content.style.maxHeight) {
-                content.style.maxHeight = null;
-                content.style.padding = "0 20px";
-            } else {
-                content.style.maxHeight = content.scrollHeight + "px";
-                content.style.padding = "10px 20px";
-            }
-        });
+        // Re-initialize accordions after filtering
+        initAccordions();
     });
 
     // Lightbox functionality (works with existing images)
@@ -89,4 +101,5 @@ document.addEventListener("DOMContentLoaded", () => {
 
         return modal;
     }
+
 });

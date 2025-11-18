@@ -11,7 +11,9 @@ The brand celebrates meaningful moments – whether surprising a loved one with 
 ## Technologies Used
 - *HTML5* – Page structure  
 - *CSS3* – Styling, layout, and responsive design  
-- *JavaScript* – Basic interactivity and responsive features  
+- *JavaScript* – Basic interactivity and responsive features 
+- *Leaflet.js* 
+- *JSON*
 - *Hosting* – Custom domain deployment  
 - *Security Features* – HTTPS and spam protection for contact/checkout forms  
 
