@@ -126,6 +126,16 @@ Feature 4: Dynamic Product Data
 Products loaded from items.json for easy content updates
 Files: pages/products.html, js/products.js, data/items.json
 
+## SEO Enhancements Added
+
+Added meta descriptions and keywords on all HTML pages
+Added alt text to all product images 
+Implemented Open Graph preview tags
+Created robots.txt file
+Created sitemap.xml
+Improved semantic HTML for accessibility and Google ranking
+Updated titles for each page to improve search visibility
+
 
 ## Enquiry Page (enquiry.html)
 
